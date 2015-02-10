@@ -1,4 +1,4 @@
-qmjhl-site-prototype
+golf-canada-prototype
 ====================
 
-A spike for the new QMJHL frontend.
+A spike for the new GC frontend.
