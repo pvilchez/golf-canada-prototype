@@ -1,0 +1,99 @@
+      @import url(http://fonts.googleapis.com/css?family=Lora);
+      @import url(http://fonts.googleapis.com/css?family=Roboto);
+
+      .si-icon-hamburger-cross svg { display:block; margin:0 auto;}
+      .row {background:#eee;}
+      .fixed { z-index:9999;}
+      .fixed_wrapper {background: #eeeeee; box-shadow: 0px 3px 5px rgba(0,0,0,0.25);}
+
+      .tabs dd { text-align: center; }
+      body {background-color:#eeeeee;}
+      .top-bar {height: 55px;background: #fff; color:#333;}
+      .top-bar-section li:not(.has-form) a:not(.button) {
+        padding: 0 15px;
+        line-height: 55px;
+        background: transparent;
+      }
+      .top-bar-section li:not(.has-form) a:not(.button):hover {
+        background-color: transparent;
+        background: transparent;
+      }
+      .top-bar-section ul li {
+        background: transparent;
+      }
+      .top-bar-section ul.left {
+          position:absolute;
+          top: -15px;
+      }
+      .tab-bar-section ul {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .tab-bar-section ul li>a{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #333;
+      }
+      .left-off-canvas-menu {
+        background: #eee;
+      }
+      .offcanvas-overlap-right .exit-off-canvas {
+        background: rgba(0,0,0,.6);
+      }
+      .offcanvas-overlap-right .exit-off-canvas:hover {
+          background: rgba(0,0,0,0.3);
+      }
+
+
+/*HAMBURGER*/
+ul.off-canvas-list li label {
+  background: #eee;
+  border-top: none;
+  border-bottom: none;
+}
+ul.off-canvas-list li a {
+  color: rgba(0,0,0,0.5);
+  font-weight:bold;
+  border-bottom: 1px solid #dddddd;
+  transition: background 300ms ease;
+}
+ul.off-canvas-list li a:hover {
+  background: #dddddd;
+}
+/*most of the card styling */
+
+body, p, a {
+  font-family: 'Roboto';
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lora';
+  font-weight: 700;
+  color: #333333;
+  font-style: bold;
+  line-height: 1;
+  padding: 0;
+}
+.row.first {
+  margin-top: 60px;
+}
+h1.section-title, h2.section-title {
+  text-align: center;
+}
+.row.full {
+  max-width: none;
+}
+.circular {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  background: url(http://placehold.it/150) no-repeat;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 400px) {
+}
+
