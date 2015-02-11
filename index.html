@@ -78,56 +78,44 @@
           </div>
 
 
-          <div class="row">
-            <div class="large-12 columns">
+          <div class="row" id="container">
+            <div>
               <h1 class="section-title">News</h1>
               <ul class="button-group">
                 <li><a href="#" class="button">Sections</a></li>
               </ul>
-              <div class="row">
-                <div class="large-8 columns">
-                  <img src="http://placehold.it/660x400&text=Image"><br>
-                  <div class="panel">
-                    <h5>Header</h5>
-                    <h6>Subheader</h6>
-                  </div>
-                </div>
-                <div class="large-4 columns">
-                  <h3 class="show-for-small">Header<hr/></h3>
-                  <div class="panel">
-                      <img src="http://placehold.it/600x500&text=Thumbnail">
-                  </div>
-                  <div class="row">
-                    <div class="large-12 small-12 columns">
-                      <img src="http://placehold.it/320x185&text=Thumbnail">
-                      <div class="panel">
-                        <h5>Header</h5>
-                      </div>
-                    </div>
-                  </div>
+              <div class="news-card big">
+                <img src="http://placehold.it/660x400&text=Image"><br>
+                <div class="panel">
+                  <h5>Header</h5>
+                  <h6>Subheader</h6>
                 </div>
               </div>
-              <div class="row">
-                <div class="large-12 show-for-small columns">
-                  <h3>Header</h3><hr>
+              <div class="news-card advert">
+                <img src="http://placehold.it/300x250">
+              </div>
+              <div class="news-card">
+                <img src="http://placehold.it/320x185&text=Thumbnail">
+                <div class="panel">
+                  <h5>Header</h5>
                 </div>
-                <div class="large-4 small-12 columns">
-                  <img src="http://placehold.it/320x185&text=Thumbnail">
-                  <div class="panel">
-                    <h5>Header</h5>
-                  </div>
+              </div>
+              <div class="news-card">
+                <img src="http://placehold.it/320x185&text=Thumbnail">
+                <div class="panel">
+                  <h5>Header</h5>
                 </div>
-                <div class="large-4 small-12 columns">
-                  <img src="http://placehold.it/320x185&text=Thumbnail">
-                  <div class="panel">
-                    <h5>Header</h5>
-                  </div>
+              </div>
+              <div class="news-card">
+                <img src="http://placehold.it/320x185&text=Thumbnail">
+                <div class="panel">
+                  <h5>Header</h5>
                 </div>
-                <div class="large-4 small-12 columns">
-                  <img src="http://placehold.it/320x185&text=Thumbnail">
-                  <div class="panel">
-                    <h5>Header</h5>
-                  </div>
+              </div>
+              <div class="news-card">
+                <img src="http://placehold.it/320x185&text=Thumbnail">
+                <div class="panel">
+                  <h5>Header</h5>
                 </div>
               </div>
             </div>
@@ -159,24 +147,6 @@
         <a class="exit-off-canvas"></a>
       </div>
     </div>
-    <script>
-      document.write('<script src=js/vendor/' +
-      ('__proto__' in {} ? 'zepto' : 'jquery') +
-      '.js><\/script>')
-      </script>
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="../assets/js/templates/jquery.js"></script>
-    <script src="../assets/js/templates/foundation.js"></script>
-    <script>
-      $(document).foundation();
-
-      var doc = document.documentElement;
-      doc.setAttribute('data-useragent', navigator.userAgent);
-    </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
@@ -186,9 +156,26 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.offcanvas.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/js/foundation/foundation.interchange.min.js"></script>
     <script src="https://rawgit.com/leafo/sticky-kit/v1.1.1/jquery.sticky-kit.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.1.0/isotope.pkgd.min.js"></script>
     <script src="svgicons-config.js"></script>
     <script src="svgicons.js"></script>
     <script src="script.js"></script>
+    <script>
+      var container = $('#container').isotope({
+        // main isotope options
+        itemSelector: '.columns',
+        masonry: {
+          columnWidth: 330
+        },
+        layoutMode: 'masonry'
+      })
+    </script>
+    <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
   </body>
 </html>
 
