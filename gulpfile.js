@@ -79,6 +79,7 @@ gulp.task('react', function () {
       'bower_components/sticky-kit/jquery.sticky-kit.min.js',
       'bower_components/react/react-with-addons.min.js',
       'bower_components/react/JSXTransformer.js',
+      'bower_components/isotope-masonry-horizontal/masonry-horizontal.js',
       // moving on...
       'assets/js/plugins/*.js',             // Gets all the user plugins
       'assets/js/_*.js',
