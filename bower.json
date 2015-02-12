@@ -25,6 +25,8 @@
     "snap.svg": "~0.3.0",
     "sticky-kit": "~1.1.1",
     "react": "~0.12.1"
+  },
+  "resolutions": {
+    "foundation": "~5.5.1"
   }
 }
-
