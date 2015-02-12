@@ -117,7 +117,16 @@ h1, h2, h3, h4, h5, h6
   background-color: #333
   margin: 10px
   .panel
+    padding: 0.65rem
     height: 85px
+    .meta
+      font-size: 10px
+      span
+        padding-right: 5px
+      .category
+        color: $primary-color
+    h5
+      line-height: 1.2rem
   img
     max-height:185px
   &.big
@@ -127,6 +136,13 @@ h1, h2, h3, h4, h5, h6
       min-height: 380px
     .panel
       height: 180px
+      h5
+        font-size: 2rem
+        line-height: 2.4rem
+      h6
+        font-size: 1.2rem
+        line-height: 1.4rem
+        color: $secondary-color
   &.tall
     height: 560px
     img
