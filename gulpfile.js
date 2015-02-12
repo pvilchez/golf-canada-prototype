@@ -32,7 +32,7 @@ var react = require("gulp-react");            // react
         errLogToConsole: true}))  // Compile sass
       .pipe(concat('main.css'))                                 // Concat all css
       .pipe(rename({suffix: '.min'}))                           // Rename it
-      //.pipe(minifycss())                                        // Minify the CSS
+      .pipe(minifycss())                                        // Minify the CSS
       .pipe(gulp.dest('assets/css/'))                           // Set the destination to assets/css
       .pipe(livereload({auto: false}));                         // Reloads server
   });
