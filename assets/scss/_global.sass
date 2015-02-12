@@ -108,29 +108,38 @@ h1, h2, h3, h4, h5, h6
     padding-left: 10px
     ul li
       margin-left: 10px
-
+.row
+  max-width: 63.75rem
 .news-card
   height: 270px
   width: 320px
   float: left
-  margin: 5px
+  background-color: #333
+  margin: 10px
   .panel
     height: 85px
+  img
+    max-height:185px
   &.big
-    height: 520px
-    width: 650px
+    height: 560px
+    width: 660px
     .panel
       height: 150px
   &.tall
-    height: 520px
-    background: #333
+    height: 560px
     .panel
       height: 132px
+  &.wide
+    width: 660px
   &.advert
     height: 270px
     width: 320px
     padding: 10px
-    margin: 5px
-    background-color: #333
+    img
+      max-height: none
 .event
   text-align: center
+.section-bar-right
+  position: absolute
+  top:16px
+  right: 12px

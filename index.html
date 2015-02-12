@@ -105,18 +105,22 @@
               <img src="mockup-images/wide-ad970x90.png" style="display:block;margin:0 auto; min-width: 970px;"/>
             </div>
           </div>
-
+          <div class="row">
+            <div class="large-12 columns">
+              <h1 class="section-title">News</h1>
+              <div class="section-bar-right">
+                <ul class="button-group">
+                  <li><a href="#" class="button">Sections</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="row" id="container">
             <div>
-              <h1 class="section-title">News</h1>
-              <ul class="button-group">
-                <li><a href="#" class="button">Sections</a></li>
-              </ul>
-              <div class="news-card big">
-                <img src="http://placehold.it/650x400&text=1st"><br>
+              <div class="news-card">
+                <img src="http://placehold.it/320x185&text=1st"><br>
                 <div class="panel">
                   <h5>Header</h5>
-                  <h6>Subheader</h6>
                 </div>
               </div>
               <div class="news-card advert">
@@ -140,7 +144,7 @@
                   <h5>Header</h5>
                 </div>
               </div>
-              <div class="news-card">
+              <div class="news-card big">
                 <img src="http://placehold.it/320x185&text=6th">
                 <div class="panel">
                   <h5>Header</h5>
@@ -155,11 +159,10 @@
                   <h5>Header</h5>
                 </div>
               </div>
-              <div class="news-card big">
-                <img src="http://placehold.it/660x400&text=9th"><br>
+              <div class="news-card wide">
+                <img src="http://placehold.it/320x185&text=9th"><br>
                 <div class="panel">
                   <h5>Header</h5>
-                  <h6>Subheader</h6>
                 </div>
               </div>
               <div class="news-card">
@@ -360,9 +363,9 @@
     <script>
       var container = $('#container').isotope({
         // main isotope options
-        itemSelector: '.columns',
+        itemSelector: '.news-card',
         masonry: {
-          columnWidth: 320
+          columnWidth: 340
         },
         layoutMode: 'masonry'
       })
